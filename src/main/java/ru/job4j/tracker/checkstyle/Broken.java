@@ -1,4 +1,4 @@
-package ru.job4j.checkstyle;
+package ru.job4j.tracker.checkstyle;
 
 public class Broken {
     private int sizeOfEmpty = 10;
@@ -16,7 +16,7 @@ public class Broken {
         }
     }
 
-     void method(int a, int b, int c, int i, int e, int f, int g) {
+     void method(int a, int b, int c, int d, int e, int f, int g) {
 
     }
 
