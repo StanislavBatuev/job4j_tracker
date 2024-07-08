@@ -32,4 +32,13 @@ class BatteryTest {
         int expected = 95;
         assertThat(another.about()).isEqualTo("My charge: " + expected + "%");
     }
+
+    @Test
+    public void whenThis50Another50ThenAnotherLoadEqual100() {
+        Battery charger = new Battery(50);
+        Battery another = new Battery(50);
+        charger.exchange(another);
+        int expected = 100;
+        assertThat(another.about()).isEqualTo("My charge: " + expected + "%");
+    }
 }
