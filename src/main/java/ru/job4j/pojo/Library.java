@@ -12,16 +12,14 @@ public class Library {
         books[2] = howToWriteABook;
         books[3] = viking;
         for (int i = 0; i < books.length; i++) {
-            Book book = books[i];
-            System.out.println(book.getBook() + " " + book.getPages());
+            System.out.println(books[i].getBook() + " " + books[i].getPages());
         }
         Book temp = null;
         temp = books[0];
         books[0] = books[3];
         books[3] = temp;
         for (int i = 0; i < books.length; i++) {
-            Book book = books[i];
-            System.out.println(book.getBook() + " " + book.getPages());
+            System.out.println(books[i].getBook() + " " + books[i].getPages());
         }
     }
 }
