@@ -57,6 +57,7 @@ public class Tracker {
             int oldId = items[index].getId();
             items[index] = item;
             items[index].setId(oldId);
+            return true;
         }
         return false;
     }
