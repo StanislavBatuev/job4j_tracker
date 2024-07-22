@@ -7,15 +7,17 @@ public class MagicBall {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.println("Я великий оракул !"
-                + "\n\t Задай любой вопрос и получишь ответ.");
+                + System.lineSeparator()
+                + "\t Задай любой вопрос и получишь ответ.");
         input.nextLine();
         int answer = new Random().nextInt(3);
-        if (answer == 0) {
-            System.out.println("Ответ на твой вопрос - Да!");
-        } else if (answer == 1) {
-            System.out.println("Ответ на твой вопрос - Нет!");
-        } else {
-            System.out.println("Ответ на твой вопрос - Может быть.");
+        switch (answer) {
+            case 0 :  System.out.println("Ответ на твой вопрос - Да!");
+            break;
+            case 1 :  System.out.println("Ответ на твой вопрос - Нет!");
+                break;
+            default:
+                System.out.println("Ответ на твой вопрос - Может быть!");
         }
     }
 }
