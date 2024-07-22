@@ -12,12 +12,9 @@ public class MagicBall {
         input.nextLine();
         int answer = new Random().nextInt(3);
         switch (answer) {
-            case 0 :  System.out.println("Ответ на твой вопрос - Да!");
-            break;
-            case 1 :  System.out.println("Ответ на твой вопрос - Нет!");
-                break;
-            default:
-                System.out.println("Ответ на твой вопрос - Может быть!");
+            case 0 -> System.out.println("Ответ на твой вопрос - Да!");
+            case 1 ->  System.out.println("Ответ на твой вопрос - Нет!");
+            default -> System.out.println("Ответ на твой вопрос - Может быть!");
         }
     }
 }
