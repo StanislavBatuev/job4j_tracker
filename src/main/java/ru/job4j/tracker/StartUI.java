@@ -1,5 +1,6 @@
 package ru.job4j.tracker;
 
+import ru.job4j.Item;
 import ru.job4j.Tracker;
 
 import java.util.Scanner;
@@ -12,9 +13,13 @@ public class StartUI {
             showMenu();
             System.out.print("Выбрать: ");
             int select = Integer.parseInt(scanner.nextLine());
-            if (select != 6) {
-                System.out.println("Пользователь выбрал: " + select);
-            } else {
+            if (select == 0) {
+                System.out.println("=== Создание новой заявки ===");
+                System.out.print("Введите имя: ");
+                Item item = new Item(scanner.nextLine());
+                tracker.add(item);
+                System.out.println("Добавленная заявка: " + item);
+            } else if (select == 6) {
                 run = false;
             }
         }
