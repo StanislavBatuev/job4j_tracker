@@ -13,7 +13,11 @@ public class Matches {
             System.out.println("Ходит " + payer + " Заберите спички со стола от 1-ой до 3-х");
             int matches = Integer.parseInt(input.nextLine());
             if (matches < 1 || matches > 3) {
-                System.out.println(System.lineSeparator() + "Необходимо взять только от 1-ой до 3-х");
+                System.out.println(System.lineSeparator()
+                        + "Необходимо взять только от 1-ой до 3-х");
+            } else if (matches > count) {
+                System.out.println(System.lineSeparator()
+                        + "Вы не можете взять больше спичек чем есть на столе");
             } else {
                 turn = !turn;
                 count -= matches;
