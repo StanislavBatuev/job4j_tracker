@@ -41,8 +41,6 @@ public class StartUI {
                 } else {
                     System.out.println("Ошибка замены заявки.");
                 }
-            } else if (select == 6) {
-                run = false;
             } else if (select == 3) {
                 System.out.println("=== Удаление заявки из ханилища ===");
                 System.out.print("Введите id: ");
@@ -50,6 +48,8 @@ public class StartUI {
                 Item item = tracker.findById(id);
                 tracker.delete(id);
                 System.out.println(item != null ? "Заявка удалена успешно." : "Ошибка удаления заявки.");
+            } else if (select == 6) {
+                run = false;
             }
         }
     }
