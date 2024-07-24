@@ -31,9 +31,9 @@ public class StartUI {
                 }
             } else if (select == 2) {
                 System.out.println("=== Редактирование заявки ===");
-                System.out.println("Введите id:");
+                System.out.print("Введите id:");
                 int id = Integer.parseInt(scanner.nextLine());
-                System.out.println("Введите Имя:");
+                System.out.print("Введите Имя:");
                 String name = scanner.nextLine();
                 Item item = new Item(name);
                 if (tracker.replace(id, item)) {
