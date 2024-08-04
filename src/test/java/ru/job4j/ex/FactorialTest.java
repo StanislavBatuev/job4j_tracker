@@ -15,4 +15,12 @@ class FactorialTest {
                 });
         assertThat(exception.getMessage()).isEqualTo("Number could not be less than 0");
     }
+
+    @Test
+    public void whenNumber3Then6() {
+        int input = 3;
+        int output = Factorial.calc(input);
+        int expected = 6;
+        assertThat(output).isEqualTo(expected);
+    }
 }
