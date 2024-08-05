@@ -30,9 +30,9 @@ public class UserStore {
                 System.out.println("У этого пользователя есть доступ.");
             }
         } catch (UserInvalidException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         } catch (UserNotFoundException e) {
-            throw new RuntimeException(e);
+            e.printStackTrace();
         }
     }
 }
