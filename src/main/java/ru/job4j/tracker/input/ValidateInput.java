@@ -3,7 +3,7 @@ package ru.job4j.tracker.input;
 public class ValidateInput extends ConsoleInput {
 
     @Override
-    public int anInt(String question) {
+    public int askInt(String question) {
         boolean invalid = true;
         int value = -1;
         do {
@@ -15,5 +15,10 @@ public class ValidateInput extends ConsoleInput {
             }
         } while (invalid);
         return value;
+    }
+
+    @Override
+    public int anInt(String question) {
+        return 0;
     }
 }
