@@ -16,6 +16,4 @@ public abstract class ConsoleInput implements Input {
 
         return Integer.parseInt(askStr(question));
     }
-
-    public abstract int anInt(String question);
 }
